@@ -4,14 +4,22 @@ body {
 }
 
 h1 {
+  padding-top: 2rem;
   font-size: 5rem;
-  color: #FCF8EC;
+  color: #FEE12B;
   font-family: 'Pacifico', cursive;
-  text-shadow: 3px 0 #456268;
+  font-weight: bold;
+  text-shadow: 5px 0 #456268;
+}
+
+h3 {
+  color: #FCF8EC;
+  padding-top: 1rem;
+  font-family: 'Permanent Marker', cursive;  font-weight: 900;
 }
 
 h4 {
-  font-size: 5rem;
+  font-size: 3rem;
   color: #FCF8EC;
   font-family: 'Permanent Marker', cursive;  font-weight: 900;
   text-shadow: 3px 0 #456268;
@@ -19,7 +27,7 @@ h4 {
 
 footer {
   background-color: #FCF8EC;
-  height: 10rem;
+  height: 8rem;
   color: #456268;
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -43,24 +51,36 @@ footer {
   background-image: url("images/tom4.png");
 }
 
-.set .d {
-  margin-right: 5rem;
-}
-
-.j {
+.z {
   background-image: url("images/crash.png");
 }
 
-.k {
+.x {
   background-image: url("images/snare.png");
 }
 
-.l {
+.c {
   background-image: url("images/kick.png");
+}
+
+.j {
+  background-image: url("images/tambourine.jpeg");
+  background-size: 150px;
+}
+
+.k {
+  background-image: url("images/shakers.png");
+  background-size: 140px;
+}
+
+.l {
+  background-image: url("images/vibraslap.jpeg");
+  background-size: 140px;
 }
 
 .set {
   margin: 10% auto;
+  margin-top: 5%;
 }
 
 .pressed {
@@ -68,7 +88,7 @@ footer {
   opacity: 0.5;
 }
 
-.drum {
+.percussion {
   outline: none;
   border: 10px solid #456268;
   font-size: 5rem;
@@ -82,4 +102,10 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: #FCF8EC;
+}
+
+.col img {
+  filter: grayscale(0.3);
+  border-radius: 50%;
+  margin-top: 2.5rem;
 }
