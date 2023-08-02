@@ -1,6 +1,5 @@
-
 document.addEventListener("keydown", function (event) {
-    playDrums(event.key);
+    playBeat(event.key);
     pressedAnimation(event.key);
 });
 
@@ -8,12 +7,12 @@ var drumCount = document.querySelectorAll(".percussion").length;
 for (var i = 0; i < drumCount; i++) {
     document.querySelectorAll(".percussion")[i].addEventListener("click", function () {
         var btnHTML = this.innerHTML;
-        playDrums(btnHTML);
+        playBeat(btnHTML);
         pressedAnimation(btnHTML);
     });
 };
 
-function playDrums(key) {
+function playBeat(key, volume) {
     switch (key) {
         case "w":
             var tom1 = new Audio("sounds/tom-1.mp3");
@@ -44,16 +43,16 @@ function playDrums(key) {
             kick.play();
             break;
         case "j":
-            var tam = new Audio("sounds/tambourine-2bars.mp3");
-            tam.play();
+            var tambourine = new Audio("sounds/tambourine-2bars.mp3");
+            tambourine.play();
             break;
         case "k":
-            var tam = new Audio("sounds/maracas-2bars.mp3");
-            tam.play();
+            var maracas = new Audio("sounds/maracas.wav");
+            maracas.play();
             break;
         case "l":
-            var tam = new Audio("sounds/vibraslap-1bar.mp3");
-            tam.play();
+            var vibraslap = new Audio("sounds/vibraslap.mp3");
+            vibraslap.play();
             break;
         default:
             console.log(key);
