@@ -1,16 +1,23 @@
-document.addEventListener("keydown", function (event) {
-    playBeat(event.key);
-    pressedAnimation(event.key);
-});
-
-var drumCount = document.querySelectorAll(".percussion").length;
-for (var i = 0; i < drumCount; i++) {
-    document.querySelectorAll(".percussion")[i].addEventListener("click", function () {
-        var btnHTML = this.innerHTML;
-        playBeat(btnHTML);
-        pressedAnimation(btnHTML);
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        const h3Animation = document.querySelector("h3");
+        h3Animation.style.transform = "translateX(0)";
+        h3Animation.style.opacity = 1;
+    }, 1000);
+    document.addEventListener("keydown", function (event) {
+        playBeat(event.key);
+        pressedAnimation(event.key);
     });
-};
+    var drumCount = document.querySelectorAll(".percussion").length;
+    for (var i = 0; i < drumCount; i++) {
+        document.querySelectorAll(".percussion")[i].addEventListener("click", function () {
+            var btnHTML = this.innerHTML;
+            playBeat(btnHTML);
+            pressedAnimation(btnHTML);
+        });
+    };
+})
+
 
 function playBeat(key, volume) {
     switch (key) {
