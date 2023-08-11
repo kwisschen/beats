@@ -1,12 +1,18 @@
 /* Retro color palette:
 #faebd7 (white)
 #fffeb3 (yellow)
+#eaB003 (dark yellow)
+#fc9b89	(pink)
+#e0abd1 (red pink)
+##dd78ae (dark pink)
 #ffe28a (orange)
+#e0bb82 (light brown)
 #6fcb9f (teal)
 #fb2e01 (red)
+#da680f (red-brown)
+#9f6841 (brown)
 #666547 (dark gray)
 */
-
 body {
   text-align: center;
 }
@@ -28,7 +34,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
-  background-color: #666547;
+  background-color: #9f6841;
   height: 100%;
   width: 100%;
 }
@@ -43,12 +49,12 @@ footer {
 }
 
 h1 {
+  color: #eaB003;
   display: flex;
   justify-content: center;
   transform: scale(0.9);
   padding-top: 1rem;
-  font-size: 6rem;
-  color: #ffe28a;
+  font-size: 6.5rem;
   font-family: 'Lobster', cursive;
   font-weight: bold;
   text-shadow: 5px 0 #000;
@@ -82,7 +88,7 @@ h4 {
 
 .percussion {
   outline: none;
-  border: 10px solid #faebd7;
+  border: 10px solid #e0bb82;
   font-size: 5rem;
   font-family: 'Permanent Marker', cursive;  font-weight: 900;
   color: #ffe28a;
