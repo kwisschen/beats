@@ -66,6 +66,10 @@ h1 {
 	to { transform: scale(1); }
 }
 
+#h1 img {
+  box-shadow: 0 0 15px #000;
+}
+
 h3 {
   font-size: 2rem;
   color: #000;
@@ -83,7 +87,7 @@ h4 {
   color: #6fcb9f;
   font-family: 'Lobster', cursive;
   font-weight: 900;
-  text-shadow: 5px 0 #000;
+  text-shadow: 3px 3px 5px #000;
 }
 
 .percussion {
@@ -159,4 +163,5 @@ h4 {
   margin-top: 5rem;
   filter: grayscale(0.4);
   opacity: 0.8;
+  box-shadow: 0 0 10px #000;
 }
